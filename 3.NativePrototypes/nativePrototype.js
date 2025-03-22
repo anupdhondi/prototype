@@ -21,3 +21,7 @@ console.log(arr.__proto__.__proto__.__proto__); // null
 // temporary wrapper objects are created using built-in constructors String, Number and Boolean.
 // They provide the methods and disappear.
 console.log(Boolean.prototype, String.prototype, Number.prototype);
+
+// Special values null and undefined stand apart.
+// They have no object wrappers, so methods and properties are not available for them.
+// And there are no corresponding prototypes either.
